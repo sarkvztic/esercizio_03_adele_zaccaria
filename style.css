@@ -11,6 +11,12 @@ html{
     scroll-padding: 83px;
 }
 
+body{
+    background-color: #f5f5f5;
+    max-width: 1100px;
+    margin: auto;
+}
+
 img{
     max-width: 100%;
     display: block;
@@ -57,29 +63,20 @@ header a:hover{
     right: 16px;
 }
 
-.nav{
-    display: flex;
-}
-
 header ul{
     justify-content: space-between;
+    display: flex;
     margin: auto;
     align-items: center;
+    gap: 14px;
 }
 
 header li{
-    justify-content: center;
     text-transform: uppercase;
     width: 100%;
     list-style: none;
-    gap: 16px;
 }
 
-body{
-    background-color: #f5f5f5;
-    max-width: 1100px;
-    margin: auto;
-}
 
 h1{
     text-transform: uppercase;
@@ -97,7 +94,7 @@ h2{
 }
 
 .section-hero p{
-    padding: 20px 60px 80px;
+    padding: 20px 0 80px;
     font-style: italic;
     text-align: center;
     font-size: 30px;
@@ -105,98 +102,58 @@ h2{
 
 .flex{
     max-width: 1100px;
-    height: 450px;
     display: flex;
-    margin: auto;
     align-items: center;
-    padding: 0;
+    margin: auto;
+    gap: 50px;
 }
 
+.flex img{
+    width: 100%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.testo-reverse{
+    width: 60%;
+    padding-left: 40px;
+    color: white;
+}
 
 .testo{
     width: 60%;
-    padding: 120px 30px;
+    padding-right: 40px;
+    color: white;
 }
 
 .immagine{
     width: 40%;
 }
 
-.flex img{
-    object-fit: cover;
-    height: 450px;
-    max-width: 100%;
+.anni{
+    margin: 0 32px 120px 32px;
 }
 
-.anni-30{
+.trenta{
     background-color: #08BA49;
-    color: white;
-    margin-bottom: 120px;
 }
 
-.anni-30 p{
-    font-size: 20px;
+.quaranta{
+    background-color: rgba(255, 174, 104, 0.842);
 }
 
-.anni-30 img {
-    width: 800px;
-    object-fit: cover;
+.cinquanta{
+    background-color: rgb(172, 172, 172); 
 }
 
-.anni-40{
-    background-color: rgba(255, 192, 136, 0.5);
-    margin-bottom: 120px;
+.sessanta{
+    background-color: rgba(237, 197, 34, 0.885); 
 }
 
-.anni-40 p{
-    font-size: 20px;
-}
-
-.anni-40 img {
-    width: 800px;
-    object-fit: cover;
-}
-
-.anni-50{
-    background-color: rgba(159, 169, 160, 0.24); 
-    margin-bottom: 120px;
-}
-
-.anni-50 p{
-    font-size: 20px;
-}
-
-.anni-50 img{
-    width: 800px;
-    object-fit: cover;
-}
-
-.anni-60{
-    background-color: rgba(253, 205, 5, 0.5); 
-    margin-bottom: 120px;
-}
-
-.anni-60 p{
-    font-size: 20px;
-}
-
-.anni-60 img{
-    width: 800px;
-    object-fit: cover;
-}
-
-.anni-70{
+.settanta{
     background-color: rgba(190, 39, 0, 0.5); 
-    margin-bottom: 120px;
-}
-
-.anni-70 p{
-    font-size: 20px;
-}
-
-.anni-70 img{
-    width: 800px;
-    object-fit: cover;
 }
 
 footer{
@@ -207,7 +164,6 @@ footer{
     gap: 30px;
     justify-content: space-between;
     padding: 30px;
-
 }
 
 .testo-footer{
@@ -229,21 +185,24 @@ footer ul {
     align-items: center;
 }
 
-@media (max-width:600px) /* o la misura che volete */  {
-    header {
+@media (max-width: 600px) {
+    
+    .flex{
         flex-direction: column;
-        gap: 12px;
-        align-items: start;
+        padding-bottom: 60px;
     }
-    header ul {
-        flex-direction: column;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .content div {
+    
+    .testo,.testo-reverse,.immagine{
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
-}    
+    
+    .testo{
+        padding-left: 40px;
+    }
+
+    .testo-reverse{
+        padding-right: 40px;
+    }
+}
