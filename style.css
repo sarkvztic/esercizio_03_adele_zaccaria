@@ -8,7 +8,7 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding: 83px;
+    scroll-padding: 5.2rem;
 }
 
 body{
@@ -28,7 +28,7 @@ header{
 
 header a{
     padding: 2rem;
-    font-size: 14px;
+    font-size: 0.8rem;
     text-decoration: none;
     color: black;
 }
@@ -50,17 +50,17 @@ header a:hover{
 .domus{
     position: absolute;
     margin: auto;
-    top: -3px;
+    top: -0.2rem;
     left: 16px;
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
 .container{
     position: absolute;
     width: auto;
-    top: 40px;
-    right: 16px;
+    top: 2.5rem;
+    right: 1rem;
 }
 
 header ul{
@@ -68,7 +68,8 @@ header ul{
     display: flex;
     margin: auto;
     align-items: center;
-    gap: 14px;
+    gap: 0.8rem;
+    background-color: aqua;
 }
 
 header li{
@@ -80,24 +81,25 @@ header li{
 
 h1{
     text-transform: uppercase;
-    font-size: 64px;
+    font-size: 4rem;
     text-align: center;
     font-style: normal;
     font-weight: bold;
-    padding-top: 60px;
+    padding-top: 3.75rem;
 }
 
 h2{
     text-transform: uppercase;
-    font-size: 36px;
-    padding-bottom: 16px;
+    font-size: 2.25rem;
+    padding-bottom: 1rem
 }
 
 .section-hero p{
-    padding: 20px 0 80px;
+    padding: 1.25rem 0 5rem;
     font-style: italic;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.8rem;
+    margin: 2rem;
 }
 
 .flex{
@@ -105,7 +107,7 @@ h2{
     display: flex;
     align-items: center;
     margin: auto;
-    gap: 50px;
+    gap: 3rem;
 }
 
 .flex img{
@@ -118,13 +120,13 @@ h2{
 
 .testo-reverse{
     width: 60%;
-    padding-left: 40px;
+    padding-left: 2.5rem;
     color: white;
 }
 
 .testo{
     width: 60%;
-    padding-right: 40px;
+    padding-right: 2.5rem;
     color: white;
 }
 
@@ -133,7 +135,7 @@ h2{
 }
 
 .anni{
-    margin: 0 32px 120px 32px;
+    margin: 0 2rem 7.5rem 2rem;
 }
 
 .trenta{
@@ -161,9 +163,9 @@ footer{
     margin: auto;
     background-color: #202020;
     align-items: center;
-    gap: 30px;
+    gap: 1.8rem;
     justify-content: space-between;
-    padding: 30px;
+    padding: 1.8rem;
 }
 
 .testo-footer{
@@ -180,7 +182,7 @@ footer{
 
 footer ul {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     list-style: none;
     align-items: center;
 }
@@ -189,7 +191,7 @@ footer ul {
     
     .flex{
         flex-direction: column;
-        padding-bottom: 60px;
+        padding-bottom: 3.75rem;
     }
     
     .testo,.testo-reverse,.immagine{
@@ -199,10 +201,16 @@ footer ul {
     }
     
     .testo{
-        padding-left: 40px;
+        padding-left: 2.5rem;
     }
 
     .testo-reverse{
-        padding-right: 40px;
+        padding-right: 2.5rem;
+    }
+
+    header ul{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
     }
 }
